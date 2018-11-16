@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+
+    font-family: 'Bad Script', sans-serif;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 0;     
+}
+.item{
+    background-color: #aeaeae;
+    flex-basis: 25%;   
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    transition: 0.5s;
+}
+.item:hover{
+    flex-basis: 100%;
+}
+span{
+    font-size: 2rem;
+    text-shadow: 0px 0px 10px #000;
+}
+.item-1{
+    background: url(https://bipbap.ru/wp-content/uploads/2017/09/195_rrrre-1920-1.jpg) no-repeat center center;
+    background-size: cover;
+}
+.item-2{
+    background: url(https://s.zagranitsa.com/images/blogs/3440/original/59965fb83ba311efc2887bb2d4d51c67.jpg?1488385047) no-repeat center center;
+    background-size: cover;
+}
+.item-3{
+    background: url(http://wallpapers-image.ru/2560x1600/summer/wallpapers/summer-images-2560x1600-13.jpg) no-repeat center center;
+    background-size: cover;
+}
+.item-4{
+    background: url(https://bipbap.ru/wp-content/uploads/2017/06/124874495_1.jpg) no-repeat center center;
+    background-size: cover;
+}
+@media (max-width:640px){
+    .slider{
+        flex-flow: column;
+        height: 100vh;        
+    }
+    .item{
+        width: 100%;        
+    }
+    .item:hover{
+        flex-grow: 30%;
+    }
+}
